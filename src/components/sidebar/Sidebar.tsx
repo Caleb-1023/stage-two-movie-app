@@ -23,7 +23,7 @@ const Sidebar = ({ children }: Props) => {
     <aside className="hidden lg:block h-screen sticky top-0 left-0  max-w-[230px]">
       <nav className="h-full flex flex-col justify-between border border-[#0000004D] rounded-e-[3rem] py-12">
         <div>
-          <button onClick={() => setExpanded(!expanded)} className="block my-3 outline-none mx-auto">{expanded ? 'Close':'Open'}</button>
+          <button onClick={() => setExpanded(!expanded)} className="hidden my-3 outline-none mx-auto">{expanded ? 'Close':'Open'}</button>
           <Link to={"/"} className="flex items-center justify-center space-x-4">
             <img
               src="/favicon_io/android-chrome-512x512.png"

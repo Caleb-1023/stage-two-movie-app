@@ -106,7 +106,8 @@ const MovieDetails = () => {
               <p>•</p>
               <p data-testid='movie-release-date'>
                 {/* {new Date(JSON.stringify(movie?.release_date)).getUTCFullYear()} */}
-                {new Date(JSON.stringify(movie?.release_date)).toUTCString()}
+                {/* {new Date(JSON.stringify(movie?.release_date)).toUTCString()} */}
+                {movie?.release_date}
               </p>
               <p>•</p>
               {/* <p>PG-13</p>

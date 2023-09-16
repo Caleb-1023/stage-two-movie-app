@@ -79,13 +79,13 @@ const MovieDetails = () => {
       });
   };
 
-  const round = (number: string) => {
-    if (parseInt(number) >= 1000) {
-      const roundNumber = Math.round(parseInt(number) / 1000);
-      return `${roundNumber}k`;
-    }
-    return number;
-  };
+  // const round = (number: string) => {
+  //   if (parseInt(number) >= 1000) {
+  //     const roundNumber = Math.round(parseInt(number) / 1000);
+  //     return `${roundNumber}k`;
+  //   }
+  //   return number;
+  // };
 
   useEffect(() => {
     getMovie();

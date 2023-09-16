@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Sidebar, { SidebarItem } from "../../components/sidebar/Sidebar";
 // import { Outlet } from "react-router-dom";
-import MovieDetails from "./components/MovieDetails";
+// import MovieDetails from "./components/MovieDetails";
 
 const Movie = () => {
   return (

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="dm-sans flex flex-col items-center space-y-9 font-bold text-lg">
+    <div className="dm-sans flex flex-col items-center space-y-9 font-bold text-lg pb-16">
       <ul className="flex items-center justify-center space-x-12">
         <li>
           <svg
@@ -73,7 +73,7 @@ const Footer = () => {
           </svg>
         </li>
       </ul>
-      <ul className="flex items-center justify-center space-x-12 text-[#111827]">
+      <ul className="flex flex-col lg:flex-row items-center justify-center lg:space-x-12  text-[#111827]">
         <li>Conditions of Use</li>
         <li>Privacy & Policy</li>
         <li>Press Room</li>

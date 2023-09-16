@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    box-sizing: border-box !important;
+}
+
 .dm-sans {
     font-family: 'DM Sans', sans-serif;
 }

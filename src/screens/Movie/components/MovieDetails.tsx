@@ -101,18 +101,18 @@ const MovieDetails = () => {
       <div className="flex flex-col md:flex-row items-start justify-between space-y-5 md:space-y-0 md:space-x-6">
         <div className="w-full basis-1 md:basis-2/3">
           <div className="flex flex-col lg:flex-row items-center md:items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-4 mb-6">
-            <div className="flex items-center space-x-2 font-medium md:text-xl">
-              <p>{movie?.title}</p>
+            <div className="flex items-center space-x-2 font-bold lg:font-medium text-xs md:text-base lg:text-xl">
+              <p data-testid='movie-title'>{movie?.title}</p>
               <p>•</p>
-              <p>
-                {new Date(JSON.stringify(movie?.release_date)).getFullYear()}
+              <p data-testid='movie-release-date'>
+                {/* {new Date(JSON.stringify(movie?.release_date)).getUTCFullYear()} */}
+                {new Date(JSON.stringify(movie?.release_date)).toUTCString()}
               </p>
               <p>•</p>
               {/* <p>PG-13</p>
               <p>•</p> */}
-              <p>
-                {movie &&
-                  `${Math.floor(movie.runtime / 60)}h ${movie.runtime % 60}m`}
+              <p data-testid='movie-runtime'>
+                {movie && movie.runtime}m
               </p>
             </div>
             <div className="flex items-center space-x-3">
@@ -127,7 +127,7 @@ const MovieDetails = () => {
             </div>
           </div>
           <div className="mb-9">
-            <p className="text-xl text-[#333333]">{movie?.overview}</p>
+            <p data-testid='movie-overview' className="text-xl text-[#333333]">{movie?.overview}</p>
           </div>
           <div className="text-xl mb-8 flex flex-col space-y-3 lg:space-y-7">
             <p>
